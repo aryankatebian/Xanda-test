@@ -1,0 +1,92 @@
+.basket {
+  position: relative;
+  background-color: #2ecc71;
+  min-height: 90vh;
+  height: 100%;
+
+  @media screen and (max-width: 620px) {
+    position: absolute;
+    z-index: 10;
+    top: 130px;
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    text-align: center;
+    padding-top: 4rem;
+  }
+}
+.total {
+  margin: 5px 10%;
+  display: flex;
+  h2 {
+    margin-left: 2rem;
+    flex: 1;
+  }
+  h3 {
+    flex: 1;
+  }
+}
+.continueButton {
+  background-color: black;
+  color: white;
+  border: 3px black solid;
+  height: 40px;
+  width: 90%;
+  margin: 0 5% 0 5%;
+  border-radius: 65px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.849);
+    border: none;
+  }
+  &:disabled {
+    background-color: rgba(0, 0, 0, 0.658);
+    border: none;
+    cursor: not-allowed;
+  }
+}
+.total-btn {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+}
+.items {
+  margin: 0 10%;
+  padding: 35px 0px;
+  display: flex;
+  border-bottom: solid 1px black;
+  img.image {
+    width: 5rem;
+    height: 20%;
+    margin: 0 5% 0 5%;
+  }
+}
+.price {
+  display: flex;
+  p {
+    font-size: 15px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .coins {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .bin {
+    position: absolute;
+    right: 20%;
+    width: 20px;
+    height: 20px;
+    margin-top: -5px;
+    cursor: pointer;
+  }
+}
+.basket-item {
+  margin-bottom: 40%;
+}
+.checkout-wrapper {
+  margin: 0 10%;
+}

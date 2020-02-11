@@ -1,0 +1,72 @@
+.items-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 0fr;
+  gap: 20px;
+  margin: 200px 3% 1% 3%;
+  height: fit-content;
+}
+.items-component {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  height: fit-content;
+  @media screen and (max-width: 1120px) {
+    grid-template-columns: 1fr;
+  }
+}
+.item-p {
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+}
+.item {
+  display: flex;
+  position: relative;
+  background-color: #4de98e;
+  padding: 1.5rem;
+  max-height: 350px;
+
+  .gameImage {
+    margin-right: 5%;
+    height: max-content;
+    @media screen and (max-width: 920px) {
+      width: 40%;
+      height: 40%;
+    }
+  }
+  .gameInfo .gamePrice {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    img {
+      width: 20px;
+      margin-right: 2rem;
+    }
+  }
+  .controller {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    height: 40%;
+  }
+}
+.addButton {
+  background-color: black;
+  color: white;
+  border: 3px black solid;
+  height: 40px;
+  width: 130px;
+  border-radius: 45px;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  &:hover {
+    background-color: #000000b9;
+    border: none;
+  }
+  &:disabled {
+    background-color: rgba(0, 0, 0, 0.685);
+    border: none;
+    cursor: not-allowed;
+  }
+}

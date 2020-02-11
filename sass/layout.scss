@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+.app {
+  background-image: url('../assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  margin-top: -165px;
+
+  .items-wrapper {
+    flex: 3;
+  }
+  .basket {
+    flex: 1;
+  }
+  @media screen and (max-width: 1320px) {
+    .items-wrapper {
+      flex: 1.5;
+    }
+  }
+  @media screen and (max-width: 820px) {
+    .items-wrapper {
+      flex: 1;
+    }
+  }
+}
+.disable {
+  opacity: 0.8;
+}
+.logo {
+  width: 300px;
+  margin: 3% 0 3% 3%;
+  @media screen and (max-width: 900px) {
+    width: 200px;
+  }
+}

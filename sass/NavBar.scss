@@ -1,0 +1,65 @@
+.NavBar {
+  height: 50px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: max-content;
+  position: relative;
+  width: 100%;
+
+  z-index: 1;
+
+  p {
+    font-size: 0.8rem;
+  }
+  img {
+    margin-left: 3.5rem;
+    margin-right: 1rem;
+  }
+  div {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 930px) {
+    grid-template-columns: 2fr 2fr 1fr;
+    p {
+      font-size: 0.6rem;
+    }
+    img {
+      width: 1.5rem;
+    }
+  }
+}
+.shopping-card {
+  width: 2rem;
+  position: absolute;
+  right: 10%;
+  top: 12px;
+
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.basket-length {
+  position: absolute;
+  color: white;
+  background-color: #00a143;
+  border-radius: 100%;
+  padding: 2px 5px;
+  right: 10%;
+  top: 6px;
+}
+
+.nav ul {
+  list-style-type: none;
+  position: absolute;
+  right: 150px;
+  top: 5px;
+  li {
+    float: right;
+    padding-left: 20px;
+    font-size: 23px;
+  }
+}
