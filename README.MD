@@ -42,10 +42,11 @@
 - /server.js
 - /webpack.config.js
 
-************\*************my notes************\*\*\*************
+**********\*\*\*\***********my notes**********\*\*\*\***********
 
+0. I have added an extra basket icon on the top right to toggle the basket component.
 1. I had to add two dependencies to the package.json file and they are react-router-dom and redux-devtools-extension (to use redux chrome extension). I also added the URL-loader to my devDependencies to import my images in the components.
 
-2. I have used functional components and React-Hooks to make my code simple, and I used Redux to manage the state (instead of Context API).
+1. I have used functional components and React-Hooks to make my code simple, and I used Redux to manage the state (instead of Context API).
 
-3. I didn't test my code because, in order to use Enzyme and Jest, I need to modify a few things on the Babelrc and Webpack files, but it is mentioned in the test instructions that I should not edit these files.
+1. I didn't test my code because, in order to use Enzyme and Jest, I need to modify a few things on the Babelrc and Webpack files, but it is mentioned in the test instructions that I should not edit these files.
