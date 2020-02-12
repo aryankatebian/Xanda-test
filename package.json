@@ -2,8 +2,7 @@
   "name": "xanda-react-trial",
   "version": "1.0.0",
   "scripts": {
-    "start": "cross-env NODE_ENV=development node ./server.js",
-    "test": "jest --watchAll"
+    "start": "cross-env NODE_ENV=development node ./server.js"
   },
   "license": "MIT",
   "dependencies": {

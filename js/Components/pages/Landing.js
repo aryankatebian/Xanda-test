@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Items from '../layout/ItemsDisplay';
 import Basket from '../layout/Basket';
-import Total from '../layout/Total';
+import Total from '../layout/CalculateTotal';
 
 const Landing = ({ basket, toggleBasket }) => {
   return (
@@ -39,6 +39,7 @@ const mapStateToProps = state => ({
 });
 
 Landing.propTypes = {
-  basket: PropTypes.oneOfType([PropTypes.array, PropTypes.object])
+  basket: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+  toggleBasket: PropTypes.bool.isRequired
 };
 export default connect(mapStateToProps)(Landing);

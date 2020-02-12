@@ -1,5 +1,5 @@
 import React from 'react';
-import Total from '../layout/Total';
+import Total from '../layout/CalculateTotal';
 import { Link } from 'react-router-dom';
 import Basket from '../layout/Basket';
 
