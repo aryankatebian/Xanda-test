@@ -5,11 +5,11 @@ import Basket from '../layout/Basket';
 
 const CheckOut = () => {
   return (
-    <div className='basket'>
+    <div className='basket-component'>
       <div className='checkout-wrapper'>
         <Link to='/'>
           <button
-            className='continueButton'
+            className='continue-button'
             style={{ width: '150px', marginTop: '40px' }}
           >
             Go Back

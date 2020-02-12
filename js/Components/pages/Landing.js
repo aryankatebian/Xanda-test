@@ -11,16 +11,16 @@ const Landing = ({ basket, toggleBasket }) => {
     <div className='container'>
       <Items />
       {toggleBasket && (
-        <div className='basket'>
+        <div className='basket-component'>
           <h1>BASKET</h1>
-          <div className='basket-item'>
+          <div className='basket-items'>
             <Basket />
           </div>
-          <div className='total-btn'>
+          <div className='total-wrapper'>
             <Total />
             <Link to='/checkout'>
               <button
-                className='continueButton'
+                className='continue-button'
                 disabled={basket.length ? false : true}
               >
                 continue

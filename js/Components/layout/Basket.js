@@ -12,17 +12,17 @@ const Basket = ({ basket, removeFromBasket }) => {
     <Fragment>
       {basket.length > 0 ? (
         basket.map(game => (
-          <div className='items' key={game.id}>
-            <img src={game.image} className='image' alt='game' />
+          <div className='item-container' key={game.id}>
+            <img src={game.image} className='basket-game-image' alt='game' />
             <div>
-              <h3 className='gameTitle'>{game.title}</h3>
-              <div className='price'>
-                <img src={coins} className='coins' alt='coins' />
+              <h3 className='game-title'>{game.title}</h3>
+              <div className='game-price'>
+                <img src={coins} className='coins-icon' alt='coins' />
                 <p>{game.price}$</p>
                 <img
                   src={bin}
                   alt='bin'
-                  className='bin'
+                  className='bin-icon'
                   onClick={e => removeFromBasket(game)}
                 />
               </div>

@@ -1,4 +1,4 @@
-.basket {
+.basket-component {
   position: relative;
   background-color: #2ecc71;
   min-height: 90vh;
@@ -16,7 +16,7 @@
     padding-top: 4rem;
   }
 }
-.total {
+.total-price {
   margin: 5px 10%;
   display: flex;
   h2 {
@@ -27,7 +27,7 @@
     flex: 1;
   }
 }
-.continueButton {
+.continue-button {
   background-color: black;
   color: white;
   border: 3px black solid;
@@ -47,35 +47,35 @@
     cursor: not-allowed;
   }
 }
-.total-btn {
+.total-wrapper {
   position: absolute;
   width: 100%;
   bottom: 50px;
 }
-.items {
+.item-container {
   margin: 0 10%;
   padding: 35px 0px;
   display: flex;
   border-bottom: solid 1px black;
-  img.image {
+  img.basket-game-image {
     width: 5rem;
     height: 20%;
     margin: 0 5% 0 5%;
   }
 }
-.price {
+.game-price {
   display: flex;
   p {
     font-size: 15px;
     margin-top: 0;
     margin-left: 10px;
   }
-  .coins {
+  .coins-icon {
     width: 1.2rem;
     height: 1.2rem;
   }
 
-  .bin {
+  .bin-icon {
     position: absolute;
     right: 20%;
     width: 20px;
@@ -84,7 +84,7 @@
     cursor: pointer;
   }
 }
-.basket-item {
+.basket-items {
   margin-bottom: 40%;
 }
 .checkout-wrapper {

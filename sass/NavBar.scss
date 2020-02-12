@@ -1,4 +1,4 @@
-.NavBar {
+.navbar-wrapper {
   height: 50px;
   background-color: rgb(20, 20, 20);
   color: white;
@@ -31,7 +31,7 @@
     }
   }
 }
-.shopping-card {
+.shopping-card-icon {
   width: 2rem;
   position: absolute;
   right: 10%;
@@ -42,7 +42,7 @@
     transform: scale(1.1);
   }
 }
-.basket-length {
+.basket-length-icon {
   position: absolute;
   color: white;
   background-color: #00a143;
@@ -50,16 +50,4 @@
   padding: 2px 5px;
   right: 10%;
   top: 6px;
-}
-
-.nav ul {
-  list-style-type: none;
-  position: absolute;
-  right: 150px;
-  top: 5px;
-  li {
-    float: right;
-    padding-left: 20px;
-    font-size: 23px;
-  }
 }

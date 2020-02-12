@@ -18,17 +18,17 @@ const Item = ({ games, addToBasket }) => {
               className={game.pending ? 'item disable' : 'item'}
               key={game.id}
             >
-              <img src={game.image} className='gameImage' alt='game'></img>
-              <div className='gameInfo'>
+              <img src={game.image} className='game-image' alt='gameImg'></img>
+              <div className='game-info'>
                 <h2>{game.title}</h2>
                 <p className='item-p'>{game.description}</p>
-                <div className='gamePrice'>
+                <div className='game-price'>
                   <img src={coin} alt='coin' />
                   <p>{`${game.price} $`}</p>
                 </div>
 
                 <button
-                  className='addButton'
+                  className='add-button'
                   onClick={e => addToBasket(game)}
                   disabled={game.pending ? true : false}
                 >
@@ -37,8 +37,8 @@ const Item = ({ games, addToBasket }) => {
               </div>
               <img
                 src={controller}
-                className='controller'
-                alt='controller'
+                className='controller-image'
+                alt='controllerImg'
               ></img>
             </div>
           );
